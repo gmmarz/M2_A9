@@ -1,7 +1,8 @@
 import tkinter as tk
 
 def but_display(but_valor):
-    oper_display.set(oper_display.get() + but_valor)
+    valor_atual = oper_display.get()
+    oper_display.set(valor_atual + str(but_valor))
 def but_clear_display():
     oper_display.set("")
 def but_calcular_operacao():
